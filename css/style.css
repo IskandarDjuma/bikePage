@@ -100,6 +100,7 @@ img {
 }
 
 .container {
+  max-width: 1440px;
   min-width: 1024px;
   margin: 0 auto;
   padding: 0 30px;
@@ -328,14 +329,14 @@ img {
 
 @media (max-width: 1023px) {
   .promo {
-    height: 85vh;
+    height: 40vh;
     margin-bottom: 50px;
   }
 }
 .promo .promo__bg {
   margin-bottom: 150px;
   background-color: #000000;
-  background-image: url("../img/bike-desktop-bg@1x.jpg");
+  background-image: url("../img/bike-desktop-bg@1x.webp");
   background-repeat: no-repeat;
   background-position: 50% -9px;
   background-size: cover, 100%;
@@ -344,7 +345,7 @@ img {
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .promo .promo__bg {
-    background-image: url("../img/bike-desktop-bg@2x.jpg");
+    background-image: url("../img/bike-desktop-bg@2x.webp");
   }
 }
 @media (max-width: 1023px) {
@@ -766,9 +767,14 @@ img {
   min-width: 929px;
   height: 522px;
   background-color: #494949;
-  background-image: url("../img/videoimg-desktop@1x.jpg");
+  background-image: url("../img/videoimg-desktop@1x.webp");
   background-size: cover, 100%;
   background-repeat: no-repeat;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .video__content {
+    background-image: url("../img/videoimg-desktop@2x.webp");
+  }
 }
 
 .video__play-button {
